@@ -1,0 +1,168 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+:root {
+  /* Font families */
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-display: 'Poppins', system-ui, sans-serif;
+  
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Font sizes with actual sizes from components */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  
+  /* Semantic sizes */
+  --text-h1: 3.5rem;      /* 56px */
+  --text-h2: 2.5rem;      /* 40px */
+  --text-h3: 1.875rem;    /* 30px */
+  --text-body: 1.25rem;   /* 20px */
+
+  /* Line heights */
+  --leading-tight: 1.2;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: #1a1a1a;
+}
+
+/* Button styles */
+.glow-button {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  border-radius: 9999px;
+  background: white;
+  color: black;
+  font-weight: var(--font-weight-bold);
+  padding: 0.75rem 2rem;
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-button.loaded:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 153, 0, 0.5);
+}
+
+.glow-button::before {
+  content: '';
+  background: linear-gradient(45deg, #FF9900, #FF5E13);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(8px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  opacity: 0;
+  border-radius: 9999px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.glow-button.loaded:hover::before {
+  opacity: 1;
+}
+
+.glow-button::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 9999px;
+}
+
+/* Gradient text styles */
+.orange-gradient-text {
+  background: linear-gradient(90deg, #FF9900 0%, #FF5E13 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.orange-glow-hover {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.orange-glow-hover:hover {
+  text-shadow:
+    0 0 10px rgba(255, 153, 0, 0.5),
+    0 0 20px rgba(255, 94, 19, 0.3),
+    0 0 30px rgba(255, 153, 0, 0.2);
+}
+
+/* Dark button variant */
+.glow-button-dark {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+  padding: 1.25rem 3rem;
+  font-size: var(--text-2xl);
+  line-height: var(--leading-normal);
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-button-dark:hover {
+  box-shadow: 
+    0 0 20px rgba(255, 153, 0, 0.5),
+    0 0 40px rgba(255, 94, 19, 0.3);
+  background: rgba(0,0,0,0.85);
+  transform: scale(1.02);
+}
+
+/* Gradient hover effects */
+.orange-gradient-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.orange-gradient-hover:hover,
+.group:hover .orange-gradient-hover {
+  background: linear-gradient(90deg, #FF9900 0%, #FF5E13 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
