@@ -11,7 +11,7 @@ const processSteps = [
     title: "Phone Placement",
     description:
       "Upon entering the phone-free zone, your phone will be placed inside your Fika case",
-    image: "/step1.svg",
+    image: "/step1.jpg",
     alt: "Phone placement in Fika case",
   },
   {
@@ -19,7 +19,7 @@ const processSteps = [
     title: "Secure Locking ",
     description:
       "Once inside the phone-free zone, the case is locked. You will always maintain possession of your phone. ",
-    image: "/step2.svg",
+    image: "/step2.jpg",
     alt: "Secure case locking",
   },
   {
@@ -27,7 +27,7 @@ const processSteps = [
     title: "Unlocking & Returns",
     description:
       "To use your phone at any time, step outside the phone-free zone and tap your case on an Fika unlocking base",
-    image: "/step3.svg",
+    image: "/step3.jpg",
     alt: "Unlocking the Fika case",
   },
 ];

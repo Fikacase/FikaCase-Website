@@ -17,7 +17,7 @@ const FAQSection: React.FC = () => {
     {
       question: "What if there's an emergency?",
       answer:
-        "Teachers retain full control in emergency situations. They have access to a designated emergency phone and can instantly unlock all Fika Cases using the unlocking base present in every classroom.",
+        "Teachers retain full control in emergency situations. They should have access to a designated emergency phone and can unlock the Fika case using the unlocking base nearby",
     },
     {
       question: "Why can't we just ban phones in schools?",
@@ -51,7 +51,7 @@ const FAQSection: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-24 mt-20">
             <h1 className={cn(commonClasses.h1, "text-black")}>
-              <span className="font-serif italic">Looking for Help ?</span>
+              <span className="font-serif italic">Frequently Asked Questions</span>
             </h1>
           </div>
           <div className="pt-18 sm:pt-10 px-8 sm:px-20 pb-18 rounded-4xl">

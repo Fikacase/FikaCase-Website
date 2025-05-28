@@ -119,7 +119,7 @@ const ProductSpec: React.FC = () => {
                         alt="FikaCASE Logo"
                         className="inline h-[0.8em] sm:h-[1em] md:h-[1.2em] mx-1 sm:mx-2 md:mx-3 align-middle translate-y-[-2px] sm:translate-y-[-4px] md:translate-y-[-8px]"
                       />
-                      <span>provides a simple, yet powerful solution</span>
+                      <span>Case provides a simple, yet powerful solution</span>
                     </div>
                   </h1>
                 </div>

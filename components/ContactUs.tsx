@@ -41,7 +41,7 @@ export default function ContactUsSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const response = await fetch("https://formspree.io/f/mzzekrjz", {
+    const response = await fetch("https://formspree.io/f/mdkgqzvd", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -115,8 +115,9 @@ export default function ContactUsSection() {
         <section
           className={cn(
             commonClasses.section,
-            "bg-transparent text-gray-900 py-24 mt-20 relative z-10"
+            "bg-cover bg-center bg-no-repeat text-white py-24 mt-20 relative z-10"
           )}
+          style={{ backgroundImage: "url('/contactbg.png')" }}
         >
           <div className={cn(commonClasses.container)}>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-24">
@@ -125,17 +126,17 @@ export default function ContactUsSection() {
                   <h2
                     className={cn(
                       commonClasses.h2,
-                      "font-semibold leading-10 mb-9 lg:text-left text-center"
+                      "font-semibold leading-10 mb-9 lg:text-left text-center text-white"
                     )}
                   >
-                    Have questions? Want to share your thoughts? Talk to us
+                    Have questions or thoughts? Talk to us
                   </h2>
 
                   {submitted ? (
                     <div
                       className={cn(
                         commonClasses.body,
-                        "text-green-600 font-semibold"
+                        "text-green-400 font-semibold"
                       )}
                     >
                       Thank you for reaching out! We'll get back to you soon.
@@ -224,20 +225,13 @@ export default function ContactUsSection() {
                 </div>
               </div>
 
-              {/* Right Section */}
-              <div
-                className={cn(
-                  commonClasses.card.base,
-                  "lg:max-w-xl w-full h-[600px] flex items-center justify-center p-8"
-                )}
-              >
-                <div
-                  className={cn(commonClasses.card.base, "w-full max-w-md p-8")}
-                >
+              {/* Right Section - Now transparent */}
+              <div className="lg:max-w-xl w-full h-[600px] flex items-center justify-center p-8">
+                <div className="w-full max-w-md p-8">
                   <div className="flex items-center justify-center mb-6">
                     <a href="/">
                       <img
-                        src="logoblack.png"
+                        src="logo.png"
                         alt="Logo"
                         className="h-20 w-auto"
                       />
@@ -246,7 +240,7 @@ export default function ContactUsSection() {
                   <h3
                     className={cn(
                       commonClasses.h3,
-                      "font-semibold text-center mb-6"
+                      "font-semibold text-center mb-6 text-white"
                     )}
                   >
                     Join Our Community
@@ -254,7 +248,7 @@ export default function ContactUsSection() {
                   <p
                     className={cn(
                       commonClasses.body,
-                      "text-gray-600 text-center mb-8"
+                      "text-white text-center mb-8"
                     )}
                   >
                     Join a community of educators dedicated to focused learning.

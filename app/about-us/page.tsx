@@ -39,7 +39,7 @@ const AboutUs: React.FC = () => {
               </span>
               that creates an environment of
               <span className="mx-2">mindful presence,</span>
-              <span className="relative inline-block mx-2">
+              <span className="relative inline-block">
                 <span className="relative z-10 after:absolute after:bottom-1 after:left-0 after:h-3 after:w-full  after:-z-10">
                   focused attention,
                 </span>

@@ -14,7 +14,7 @@ const Footer = () => {
     formData.append("email", email);
 
     try {
-      const response = await fetch("https://formspree.io/f/mzzekrjz", {
+      const response = await fetch("https://formspree.io/f/mdkgqzvd", {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
@@ -42,45 +42,46 @@ const Footer = () => {
               <img src="logo.png" alt="Logo" className="h-10 w-auto" />
             </div>
             <p className={cn(commonClasses.body, "text-gray-300 max-w-xs")}>
-              Transforming classrooms into focused learning environments with innovative phone management solutions.
+              Transforming classrooms into focused learning environments with
+              innovative phone management solutions.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className={cn(commonClasses.h3, "mb-6 text-white")}>Quick Links</h3>
+            <h3 className={cn(commonClasses.h3, "mb-6 text-white")}>
+              Quick Links
+            </h3>
             <ul className="space-y-4">
               <li>
-                <Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/about-us"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/how-it-works" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/how-it-works"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link href="/why-it-matters" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/why-it-matters"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Why It Matters
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/faq"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   FAQ
                 </Link>
               </li>
@@ -93,22 +94,23 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 text-gray-300">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span>123 Education St, School District, 12345</span>
+                <span>Hyderabad, Telangana, India</span>
               </li>
-              <li className="flex items-center space-x-3 text-gray-300">
-                <Phone className="h-5 w-5 text-primary" />
-                <span>+1 (555) 123-4567</span>
-              </li>
+
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>contact@fikacase.com</span>
+                <a href="mailto:contact@fikacase.com" className="hover:underline">
+                  contact@fikacase.com
+                </a>
               </li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h3 className={cn(commonClasses.h3, "mb-6 text-white")}>Newsletter</h3>
+            <h3 className={cn(commonClasses.h3, "mb-6 text-white")}>
+              Newsletter
+            </h3>
             <p className={cn(commonClasses.body, "text-gray-300 mb-4")}>
               Stay updated with our latest news and updates.
             </p>
@@ -154,16 +156,9 @@ const Footer = () => {
         <div className={cn(commonClasses.container, "py-6")}>
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Fika Case. Patent Pending. All rights reserved.
+              © {new Date().getFullYear()} Fika Case. Patent Pending. All rights
+              reserved.
             </p>
-            <div className="flex space-x-6">
-              <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>

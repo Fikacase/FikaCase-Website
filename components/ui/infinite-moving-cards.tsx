@@ -132,7 +132,7 @@ export const InfiniteMovingCards = ({
                         "text-sm sm:text-base md:text-2xl leading-relaxed"
                       )}
                     >
-                      "{item.quote}"
+                      {item.quote}
                     </span>
                     {item.title && (
                       <span

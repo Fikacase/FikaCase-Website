@@ -113,7 +113,6 @@ const WhyItMattersComponent: React.FC = () => {
             >
               Why It Matters
             </h1>
-            <div className="h-1 w-32 mx-auto mb-10 rounded-full bg-primary"></div>
             <p
               className={cn(
                 commonClasses.body,
@@ -131,7 +130,7 @@ const WhyItMattersComponent: React.FC = () => {
                 key={index}
                 className={cn(
                   commonClasses.card.base,
-                  "border-l-4 border-primary px-8 py-7 transition-transform duration-200 hover:scale-[1.02]"
+                  "border-1 border-[#FF9900] px-8 py-7 transition-transform duration-200 hover:scale-[1.02]"
                 )}
               >
                 <Link

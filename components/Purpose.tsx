@@ -140,7 +140,7 @@ const Purpose = () => {
               <div
                 className={cn(
                   commonClasses.card.base,
-                  "overflow-hidden rounded-3xl"
+                  "overflow-hidden rounded-3xl border-1 border-[#FF9900]"
                 )}
               >
                 <img
@@ -167,7 +167,7 @@ const Purpose = () => {
                 <div
                   className={cn(
                     commonClasses.card.base,
-                    "overflow-hidden rounded-3xl"
+                    "overflow-hidden rounded-3xl border-1 border-[#FF9900]"
                   )}
                 >
                   <img
